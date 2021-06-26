@@ -1,0 +1,18 @@
+# Compiled JavaScript files
+**/*.js
+**/*.js.map
+
+# TypeScript v1 declaration files
+typings/
+
+# Node.js dependency directory
+node_modules/
+
+# database backup for local emulators
+data/
+
+# runtime config variables for local emulators
+.runtimeconfig.json
+
+# not the .eslintrc.js
+!.eslintrc.js

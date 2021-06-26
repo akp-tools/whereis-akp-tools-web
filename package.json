@@ -1,0 +1,35 @@
+{
+  "name": "whereis.akp.tools",
+  "version": "1.0.0",
+  "main": "public/index.html",
+  "license": "MIT",
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "clean": "rimraf public/ dist/",
+    "deploy": "firebase deploy --only hosting",
+    "deploy:functions": "firebase deploy --only functions",
+    "firebase": "firebase",
+    "predeploy": "yarn clean && yarn build",
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.11",
+    "firebase-tools": "^8.11.2",
+    "parcel": "^2.0.0-nightly.416",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "date-fns": "^2.22.1",
+    "firebase": "^8.1.1",
+    "react": "^0.0.0-experimental-7ec4c5597",
+    "react-dom": "^0.0.0-experimental-7ec4c5597",
+    "reactfire": "^3.0.0-canary.8188802"
+  }
+}
